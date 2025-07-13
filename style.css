@@ -1,0 +1,59 @@
+body {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  height: 100vh !important;
+  margin: 0 !important;
+  background-color: #1a1a1a !important; /* Forced dark */
+  font-family: Arial, sans-serif !important;
+  overflow: hidden !important;
+  /* Debug: Add a red border to confirm CSS loads */
+  border: 5px solid red !important;
+}
+#game-container {
+  text-align: center !important;
+}
+#tetris-canvas {
+  border: 4px solid #fff !important; /* White border */
+  background-color: #333 !important; /* Dark canvas */
+  max-width: 100% !important;
+  touch-action: none !important;
+}
+#score, #game-over {
+  font-size: 1.5em !important;
+  margin: 10px 0 !important;
+  color: #fff !important; /* White text */
+}
+#controls {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  margin-top: 10px !important;
+}
+button {
+  padding: 10px 20px !important;
+  font-size: 1em !important;
+  background-color: #1e90ff !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 5px !important;
+  cursor: pointer !important;
+  touch-action: manipulation !important;
+}
+button:hover {
+  background-color: #0066cc !important;
+}
+@media (max-width: 600px) {
+  #tetris-canvas {
+    width: 90vw !important;
+    height: 135vw !important;
+  }
+  #score, #game-over {
+    font-size: 1.2em !important;
+  }
+  button {
+    padding: 8px 16px !important;
+    font-size: 0.9em !important;
+  }
+}
